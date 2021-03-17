@@ -954,7 +954,7 @@ ctx.replyWithPhoto({
             [
                 
                 {text: "Kağıttan Hayatlar'ı izle", callback_data: 'kagitizle'},
-               
+            
                 
                 
           ],
@@ -962,8 +962,6 @@ ctx.replyWithPhoto({
                 
             {text: "Eltilerin Savaşı'nı izle", callback_data: 'eltiizle'},
            
-            
-            
       ],
         ]
     }
