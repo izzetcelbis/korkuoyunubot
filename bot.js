@@ -353,7 +353,7 @@ bot.action('devamkonusmake', ctx=> {
     ctx.deleteMessage();
 
 
-bot.telegram.sendMessage(ctx.chat.id, "Hakan: Emrah emin misin büyü olduğuna?\n\nEmrah: Evet, adım kadar eminim büyü bunlar içindeki kolye de büyülü olabilir.(Sandığın içini karıştırırken bir adres yazılı not buldular.)\n\nAsya: Bence buraya gitsek bize yardımcı olurlar.\n\nHakan: Aşkım saçmalama bilmediğin bir yere mi gidiceksin?\n\nAsya: Ben gidicem Hakan, gelip gelmemeyi sen bilirsin. En azından bilgi sahibi oluruz, Lina'yı tek başına bırakamam.\n\nLina: Bencede gitmeliyiz, yoksa bu sandığın anlamını bulamayız.\n\nEmrah: Yarın sabah hepinizi kapının önünden alıcam, köy bize 3-4 saat uzaklıkta çantanızı hazırlayın.\n\n(Herkes evlerine dağıldı)",{
+bot.telegram.sendMessage(ctx.chat.id, "Hakan: Emrah emin misin büyü olduğuna?\n\nEmrah: Evet, adım kadar eminim büyü bunlar içindeki kolye de büyülü olabilir.(Sandığın içini karıştırırken bir adres yazılı not buldular.)\n\nAsya: Bence buraya gitsek bize yardımcı olurlar.\n\nHakan: Aşkım saçmalama bilmediğin bir yere mi gidiceksin?\n\nAsya: Ben gideceğim Hakan, gelip gelmemeyi sen bilirsin. En azından bilgi sahibi oluruz, Lina'yı tek başına bırakamam.\n\nLina: Bencede gitmeliyiz, yoksa bu sandığın anlamını bulamayız.\n\nEmrah: Yarın sabah hepinizi kapının önünden alıcam, köy bize 3-4 saat uzaklıkta çantanızı hazırlayın.\n\n(Herkes evlerine dağıldı)",{
 
 
 reply_markup: {
@@ -950,8 +950,6 @@ ctx.replyWithPhoto({
                 
                   {text: "Ayla'yı izle", callback_data: 'aylaizle'},
                  
-                  
-                  
             ],
             [
                 
@@ -1019,14 +1017,12 @@ ctx.replyWithPhoto({
   
    
 
-   
- 
 
 bot.action('konusmayadevam4', ctx=> {
     ctx.deleteMessage();
 
 
-bot.telegram.sendMessage(ctx.chat.id, "(Köyün içine girdiniz)\n\nEmrah: Ben arabayı buraya park edip köyün muhtarını arıyayım. Siz bekleyin arabada, Hakan dikkat et kızlara.\n\nLina: Ben de gelebilir miyim?\n\nEmrah: Tamam gel.\n\n(Muhtarı köyün kahvesinde buldular ve sakin bir yerde konuşmak istediklerini söylediler)\n\n(Muhtar Lina'yı baştan sona süzdü ve gözlerine bakakaldı)\n\nLina: Birine mi benzettiniz?\n\nMuhtar: Yok kızım dalmışım öyle.\n\nEmrah: Biz 4 kişiyiz muhtar, kalıcak bir yere ihtiyacımız var İstanbul'dan geliyoruz.\n\nMuhtar: Misafir evi var, siz arabanıza geçin ben oğlumu göndericem yanınıza.\n\nEmrah: Tamam muhtar, Lina istersen sen burada bekle dönerken alırım seni.",{
+bot.telegram.sendMessage(ctx.chat.id, "(Köyün içine girdiniz)\n\nEmrah: Ben arabayı buraya park edip köyün muhtarını arayayım. Siz bekleyin arabada, Hakan dikkat et kızlara.\n\nLina: Ben de gelebilir miyim?\n\nEmrah: Tamam gel.\n\n(Muhtarı köyün kahvesinde buldular ve sakin bir yerde konuşmak istediklerini söylediler)\n\n(Muhtar Lina'yı baştan sona süzdü ve gözlerine bakakaldı)\n\nLina: Birine mi benzettiniz?\n\nMuhtar: Yok kızım dalmışım öyle.\n\nEmrah: Biz 4 kişiyiz muhtar, kalıcak bir yere ihtiyacımız var İstanbul'dan geliyoruz.\n\nMuhtar: Misafir evi var, siz arabanıza geçin ben oğlumu göndericem yanınıza.\n\nEmrah: Tamam muhtar, Lina istersen sen burada bekle dönerken alırım seni.",{
 
 
 reply_markup: {
