@@ -1101,4 +1101,10 @@ ctx.deleteMessage();
 
 
 
-bot.launch()
+bot.launch({
+    webhook: {
+      domain: 'korkuoyunubot.herokuapp.com',
+      hookPath: '/RANDOM_ID',
+      port: process.env.PORT
+    }
+  });
