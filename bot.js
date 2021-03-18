@@ -6,7 +6,7 @@ const bot = new Telegraf('1606946477:AAETCm_Ikx2PCTUpwGDn64Oq5HY3ifzeVN0')
 
 bot.start((ctx) => {
    
-   ctx.reply(ctx.from.first_name+" selam, oyunumuza hoşgeldin..Karakterleri incelemeye başla ve oyunu başlat. \n ",{
+   ctx.reply(ctx.from.first_name+" selam, oyunumuza hoşgeldin. Karakterleri incelemeye başla ve oyunu başlat. \n ",{
 
 
 
@@ -269,7 +269,7 @@ bot.action('banyogir', ctx=> {
     ctx.deleteMessage();
 
 
-bot.telegram.sendMessage(ctx.chat.id, "Banyoya girdin, temizlendin ve biraz vakit geçirdin, mutluluk seviyen arttı.✅",{
+bot.telegram.sendMessage(ctx.chat.id, "Banyoya girdin, temizlendin ve biraz vakit geçirdin, mutlu oldun.",{
 
 
 reply_markup: {
@@ -353,7 +353,7 @@ bot.action('devamkonusmake', ctx=> {
     ctx.deleteMessage();
 
 
-bot.telegram.sendMessage(ctx.chat.id, "Hakan: Emrah emin misin büyü olduğuna?\n\nEmrah: Evet, adım kadar eminim büyü bunlar içindeki kolye de büyülü olabilir.(Sandığın içini karıştırırken bir adres yazılı not buldular.)\n\nAsya: Bence buraya gitsek bize yardımcı olurlar.\n\nHakan: Aşkım saçmalama bilmediğin bir yere mi gidiceksin?\n\nAsya: Ben gideceğim Hakan, gelip gelmemeyi sen bilirsin. En azından bilgi sahibi oluruz, Lina'yı tek başına bırakamam.\n\nLina: Bencede gitmeliyiz, yoksa bu sandığın anlamını bulamayız.\n\nEmrah: Yarın sabah hepinizi kapının önünden alıcam, köy bize 3-4 saat uzaklıkta çantanızı hazırlayın.\n\n(Herkes evlerine dağıldı)",{
+bot.telegram.sendMessage(ctx.chat.id, "Hakan: Emrah emin misin büyü olduğuna?\n\nEmrah: Evet, adım kadar eminim büyü bunlar içindeki kolye de büyülü olabilir.(Sandığın içini karıştırırken bir adres yazılı not buldular.)\n\nAsya: Bence buraya gitsek bize yardımcı olurlar.\n\nHakan: Aşkım saçmalama bilmediğin bir yere mi gidiceksin?\n\nAsya: Ben gideceğim Hakan, gelip gelmemeyi sen bilirsin. En azından bilgi sahibi oluruz, Lina'yı tek başına bırakamam.\n\nLina: Bencede gitmeliyiz, yoksa bu sandığın anlamını bulamayız.\n\nEmrah: Yarın sabah hepinizi kapının önünden alacağım, köy bize 3-4 saat uzaklıkta çantanızı hazırlayın.\n\n(Herkes evlerine dağıldı)",{
 
 
 reply_markup: {
@@ -510,7 +510,7 @@ bot.action('uyu1', ctx=> {
     ctx.deleteMessage();
 
 
-bot.telegram.sendMessage(ctx.chat.id, "Sabah uyandın, kıyafetlerini giydin kapının önüne çıkıp Emrah'ı beklemeye başladın.\n\nEmrah arabayla seni evinin önünden aldı bütün arkadaşların arabada.\n\nLina: Günaydın herkese, umarım bu yol boyunca kötü şeylerle karşılaşmayız.\n\nEmrah: Merak etme Lina, öyle bir şey olmayacak.\n\nHakan: Bende öyle umuyorum (tshirt'ünü kaldırarak belindeki kuru sıkı tabancayı gösterir) en azından korkutmak için işimizi görür.\n\nAsya: (gülmeye başlar) çok abartıyorsun Hakan.",{
+bot.telegram.sendMessage(ctx.chat.id, "(Sabah uyandın, kıyafetlerini giydin kapının önüne çıkıp Emrah'ı beklemeye başladın.)\n\n(Emrah arabayla seni evinin önünden aldı bütün arkadaşların arabada)\n\nLina: Günaydın herkese, umarım bu yol boyunca kötü şeylerle karşılaşmayız.\n\nEmrah: Merak etme Lina, öyle bir şey olmayacak.\n\nHakan: Bende öyle umuyorum (tshirt'ünü kaldırarak belindeki kuru sıkı tabancayı gösterir) en azından korkutmak için işimizi görür.\n\nAsya: (gülmeye başlar) çok abartıyorsun Hakan.",{
 
 
 reply_markup: {
@@ -539,7 +539,7 @@ bot.action('devamkonusmake2', ctx=> {
     ctx.deleteMessage();
 
 
-bot.telegram.sendMessage(ctx.chat.id, "(Yolculuğun üzerinden 3.30 saat geçti, koyunlu tabelasını gördün ve hava kararmaya başladı.)\n\nEmrah: Navigasyon kafayı yedi, olmayan yolları gösteriyor. Bu iki yoldan hangisine girmemiz gerekiyor acaba?\n\n Hakan: Filmlerdeki olaylara döndü bu, yollardan biri çok tehlikeli oluyor ya (gülmeye başlar)\n\nHangi yoldan gidilmesi gerektiğini senin belirlemeni istiyorlar. ",{
+bot.telegram.sendMessage(ctx.chat.id, "(Yolculuğun üzerinden 3.30 saat geçti, koyunlu tabelasını gördün ve hava kararmaya başladı.)\n\nEmrah: Navigasyon kafayı yedi, olmayan yolları gösteriyor. Bu iki yoldan hangisine girmemiz gerekiyor acaba?\n\nHakan: Filmlerdeki olaylara döndü bu, yollardan biri çok tehlikeli oluyor ya. (gülmeye başlar)\n\n(Arkadaşların hangi yoldan gidilmesi gerektiğini senin belirlemeni istiyorlar) ",{
 
 
 reply_markup: {
@@ -606,7 +606,7 @@ bot.action('sagdangit1', ctx=> {
     ctx.deleteMessage();
 
 
-bot.telegram.sendMessage(ctx.chat.id, "Sağdaki yoldan girmeniz gerektiğini söyledin, yoldan biraz ilerledikten sonra yolun bozulduğunu farkettiniz. Sol yola dönmekten başka çareniz yok.",{
+bot.telegram.sendMessage(ctx.chat.id, "Sağdaki yoldan gitmeniz gerektiğini söyledin, yoldan biraz ilerledikten sonra yolun bozulduğunu farkettiniz. Sol yola dönmekten başka çareniz yok.",{
 
 
 reply_markup: {
@@ -732,6 +732,34 @@ reply_markup: {
 })
 
 })
+
+bot.action('konusmayadevam9', ctx=> {
+    ctx.deleteMessage();
+
+
+bot.telegram.sendMessage(ctx.chat.id, "Lina: Bende anlamadım ne olduğunu, Emrah'la birlikteyken de baştan aşağıya süzdü beni, beni tanıyor gibiydi.\n\nEmrah: Saçmalama Lina sen öyle düşünmüşsündür kötü düşünmeyin hemen.\n\nHakan: Abi nasıl düşünebiliriz başka, burada ne bok döndüğünü nasıl çözücez biz? Baksana adam hiçbir şey demeden çıktı gitti.\n\nAsya: Gerçekten bu işin boku çıkmaya başladı.\n\nLina: Ben muhtarın evine gidicem lütfen hiç biriniz gelmeyin.",{
+
+
+reply_markup: {
+
+    inline_keyboard: [
+          [
+              
+            {text: 'Devam et', callback_data: 'konusmayadevam9'},
+               
+                
+                
+          ],
+
+        
+    ]
+
+}
+})
+
+})
+
+
 bot.action('konusmayadevam8', ctx=> {
     ctx.deleteMessage();
 
@@ -744,7 +772,7 @@ reply_markup: {
     inline_keyboard: [
           [
               
-            {text: 'Devam et', callback_data: 'konusmayadevam8'},
+            {text: 'Devam et', callback_data: 'konusmayadevam9'},
                
                 
                 
@@ -1020,7 +1048,7 @@ bot.action('konusmayadevam4', ctx=> {
     ctx.deleteMessage();
 
 
-bot.telegram.sendMessage(ctx.chat.id, "(Köyün içine girdiniz)\n\nEmrah: Ben arabayı buraya park edip köyün muhtarını arayayım. Siz bekleyin arabada, Hakan dikkat et kızlara.\n\nLina: Ben de gelebilir miyim?\n\nEmrah: Tamam gel.\n\n(Muhtarı köyün kahvesinde buldular ve sakin bir yerde konuşmak istediklerini söylediler)\n\n(Muhtar Lina'yı baştan sona süzdü ve gözlerine bakakaldı)\n\nLina: Birine mi benzettiniz?\n\nMuhtar: Yok kızım dalmışım öyle.\n\nEmrah: Biz 4 kişiyiz muhtar, kalıcak bir yere ihtiyacımız var İstanbul'dan geliyoruz.\n\nMuhtar: Misafir evi var, siz arabanıza geçin ben oğlumu göndericem yanınıza.\n\nEmrah: Tamam muhtar, Lina istersen sen burada bekle dönerken alırım seni.",{
+bot.telegram.sendMessage(ctx.chat.id, "(Köyün içine girdiniz)\n\nEmrah: Ben arabayı buraya park edip köyün muhtarını arayayım. Siz bekleyin arabada, Hakan dikkat et kızlara.\n\nLina: Ben de gelebilir miyim?\n\nEmrah: Tamam gel.\n\n(Muhtarı köyün kahvesinde buldular ve sakin bir yerde konuşmak istediklerini söylediler)\n\n(Muhtar Lina'yı baştan sona süzdü ve gözlerine bakakaldı)\n\nLina: Birine mi benzettiniz?\n\nMuhtar: Yok kızım dalmışım öyle.\n\nEmrah: Biz 4 kişiyiz muhtar, kalıcak bir yere ihtiyacımız var İstanbul'dan geliyoruz.\n\nMuhtar: Misafir evi var, siz arabanıza geçin ben oğlumu göndereceğim yanınıza.\n\nEmrah: Tamam muhtar, Lina istersen sen burada bekle dönerken alırım seni.",{
 
 
 reply_markup: {
@@ -1058,7 +1086,42 @@ reply_markup: {
 
 
 })
-    
+bot.action('emrahilegit1', ctx=> {
+    ctx.deleteMessage();
+
+
+bot.telegram.sendMessage(ctx.chat.id, "(Emrah ile arabaya kadar yürüdünüz, muhtarın oğlu sizi alıp misafir evine yerleştirdi)\n\nEmrah: Sandığın içine tekrar bakalım, başka bir ipucu falan var mı diye.\n\nAsya: Evet haklısın sandık nerede?\n\nLina: İçeriye koydum getiriyorum.",{
+
+
+reply_markup: {
+
+    inline_keyboard: [
+          [
+              
+            {text: "Sandığı incele", callback_data: 'incele2'},
+               
+                
+                
+          ],
+   
+
+        
+    ]
+
+}
+})
+
+
+
+
+
+
+
+
+
+
+
+})
  
   //  bot.telegram.sendMessage(ctx.chat.id, "(Whatsapp'ı açıp arkadaşlarınla yazışıyorsun)",)
     
