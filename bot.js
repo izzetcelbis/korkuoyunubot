@@ -866,7 +866,7 @@ reply_markup: {
 })
 
 
-bot.action('muhtarinevinegir', ctx=> {
+bot.action('muhtarinevegir', ctx=> {
     ctx.deleteMessage();
 
 
@@ -977,7 +977,7 @@ ctx.replyWithAudio({
     source: "sesler.mp3"
 },{
 
-    caption: "(Dışarı çıktın ve muhtarın evini arıyorsun, değişik değişik sesler duymaya başladın)\n\nLina: Bu sesler ne ya, Emrah'ı arıyamıyorum telefonum kapanmış.\n\n(seslerin daha çok arttığını farkediyorsun, biraz yürüdükten sonra karşına biri çıkıyor ve muhtarın evini tarif ediyor güvenmekte tereddüt ediyorsun)",
+    caption: "❗️❗️(BU SESİ 30 SANİYE DİNLEMEK OYUN KEYFİNİZİ ARTTIRACAKTIR)\n\nDışarı çıktın ve muhtarın evini arıyorsun, değişik değişik sesler duymaya başladın)\n\nLina: Bu sesler ne ya, Emrah'ı arıyamıyorum telefonum kapanmış.\n\n(seslerin daha çok arttığını farkediyorsun, biraz yürüdükten sonra karşına biri çıkıyor ve muhtarın evini tarif ediyor güvenmekte tereddüt ediyorsun)",
 
     reply_markup: {
 
