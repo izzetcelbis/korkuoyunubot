@@ -745,7 +745,7 @@ reply_markup: {
     inline_keyboard: [
           [
               
-            {text: 'Devam et', callback_data: 'konusmayadevam9'},
+            {text: 'Dışarı çık ve muhtarın evini ara', callback_data: 'muhtarinevine'},
                
                 
                 
@@ -764,7 +764,7 @@ bot.action('konusmayadevam8', ctx=> {
     ctx.deleteMessage();
 
 
-bot.telegram.sendMessage(ctx.chat.id, "Emrah: Aslında biz köye bu sandığı araştırmak için gelmiştik.\n\nMuhtar: İçine bakabilir miyim?\n\nLina: Bakabilirsiniz.\n\n(Muhtar sandığı açtı, elini içindeki büyü kağıtlarında gezdirdi ve kolyeyi eline aldı.\n\nMuhtar: Gidin bu köyden.\n\nEmrah: Neyden bahsediyorsun muhtar ne oldu?\n\nMuhtar: Akşam olmadan gidin bu köyden(cümlesini bitirdikten sonra hiçbir şey demeden evden çıkar)\n\nAsya: Ne oluyor ya?",{
+bot.telegram.sendMessage(ctx.chat.id, "Emrah: Aslında biz köye bu sandığı araştırmak için gelmiştik.\n\nMuhtar: İçine bakabilir miyim?\n\nLina: Bakabilirsiniz.\n\n(Muhtar sandığı açtı, elini içindeki büyü kağıtlarında gezdirdi ve kolyeyi eline aldı sonra tekrar sandığın içine bıraktı)\n\nMuhtar: Gidin bu köyden.\n\nEmrah: Neyden bahsediyorsun muhtar ne oldu?\n\nMuhtar: Akşam olmadan gidin bu köyden(cümlesini bitirdikten sonra hiçbir şey demeden evden çıktı)\n\nAsya: Ne oluyor ya?",{
 
 
 reply_markup: {
@@ -838,6 +838,59 @@ reply_markup: {
 })
 
 })
+
+bot.action('konusmayadevam10', ctx=> {
+    ctx.deleteMessage();
+
+
+bot.telegram.sendMessage(ctx.chat.id, "(Tam evden içeri giricekken muhtarın ayaklarının ters olduğunu farkettin, arkana bakmadan misafir evine doğru kaçmaya başladın)\n\nEmrah: Ne oldu Lina, nefes nefese kalmışsın.\n\nLina: Emrah gidelim bu köyden Emrah lütfen gidelim bu köyden.\n\nHakan: Lina ne oldu anlatsana bize de.\n\nAsya: Bence biraz dinlenmeye ihtiyacın var gel biraz dinlenelim güzelim.\n\n(Eve girip uyudunuz)",{
+
+
+reply_markup: {
+
+    inline_keyboard: [
+          [
+              
+            {text: 'Konuşmaya devam et', callback_data: 'konusmayadevam11'},
+               
+                
+                
+          ],
+
+        
+    ]
+
+}
+})
+
+})
+
+
+bot.action('muhtarinevinegir', ctx=> {
+    ctx.deleteMessage();
+
+
+bot.telegram.sendMessage(ctx.chat.id, "(Tarif edilen evin kapısını çalmaya başladın, arkandan gülme sesleri duydun arkana baktığında sana evi gösteren kişi delirmiş gibi gülüyordu)\n\nLina: Neye gülüyorsun gülünecek ne var?\n\n(Evi tarif eden kişi birden koşmaya başladı)\n\nLina: Adının Koyunlu Köyü değilde deliler köyü olması gerekiyordu.\n\nMuhtar: Hoş geldin kızım ne istemiştin?\n\nLina: Hoş buldum muhtar biraz gelebilir miyim?",{
+
+
+reply_markup: {
+
+    inline_keyboard: [
+          [
+              
+            {text: 'Konuşmaya devam et', callback_data: 'konusmayadevam10'},
+               
+                
+                
+          ],
+
+        
+    ]
+
+}
+})
+
+})
 bot.action('soldangit1', ctx=> {
     ctx.deleteMessage(),
     ctx.deleteChatPhoto(),
@@ -899,6 +952,46 @@ ctx.replyWithPhoto({
             [
                 
                 {text: "Banyoya gir", callback_data: 'banyogir'},
+               
+                
+                
+          ]
+        ]
+    }
+
+
+    
+}
+
+
+)
+
+})
+bot.action('muhtarinevine', ctx=> {
+    ctx.deleteMessage(),
+    ctx.deleteChatPhoto(),
+
+ctx.replyWithAudio({
+    
+
+    source: "sesler.mp3"
+},{
+
+    caption: "(Dışarı çıktın ve muhtarın evini arıyorsun, değişik değişik sesler duymaya başladın)\n\nLina: Bu sesler ne ya, Emrah'ı arıyamıyorum telefonum kapanmış.\n\n(seslerin daha çok arttığını farkediyorsun, biraz yürüdükten sonra karşına biri çıkıyor ve muhtarın evini tarif ediyor güvenmekte tereddüt ediyorsun)",
+
+    reply_markup: {
+
+        inline_keyboard: [
+            [
+                
+                  {text: "Muhtarın evine gir", callback_data: 'muhtarinevegir'},
+                 
+                  
+                  
+            ],
+            [
+                
+                {text: "Başkasına sor", callback_data: 'baskasor2'},
                
                 
                 
