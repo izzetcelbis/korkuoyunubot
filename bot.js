@@ -843,7 +843,7 @@ bot.action('konusmayadevam10', ctx=> {
     ctx.deleteMessage();
 
 
-bot.telegram.sendMessage(ctx.chat.id, "(Tam evden içeri giricekken muhtarın ayaklarının ters olduğunu farkettin, arkana bakmadan misafir evine doğru kaçmaya başladın)\n\nEmrah: Ne oldu Lina, nefes nefese kalmışsın.\n\nLina: Emrah gidelim bu köyden Emrah lütfen gidelim bu köyden.\n\nHakan: Lina ne oldu anlatsana bize de.\n\nAsya: Bence biraz dinlenmeye ihtiyacın var gel biraz dinlenelim güzelim.\n\n(Eve girip uyudunuz)",{
+bot.telegram.sendMessage(ctx.chat.id, "(Tam evden içeri giricekken muhtarın ayaklarının ters olduğunu farkettin, arkana bakmadan misafir evine doğru kaçmaya başladın)\n\nEmrah: Ne oldu Lina, nefes nefese kalmışsın.\n\nLina: Emrah gidelim bu köyden Emrah lütfen gidelim bu köyden ben burada daha fazla kalmak istemiyorum.\n\nHakan: Lina ne oldu anlatsana bize de.\n\nAsya: Bence biraz dinlenmeye ihtiyacın var gel biraz dinlenelim güzelim, ben senin yanındayım merak etme.\n\n(Eve girip uyudunuz)",{
 
 
 reply_markup: {
@@ -851,7 +851,7 @@ reply_markup: {
     inline_keyboard: [
           [
               
-            {text: 'Konuşmaya devam et', callback_data: 'konusmayadevam11'},
+            {text: 'Devam et', callback_data: 'konusmayadevam11'},
                
                 
                 
@@ -866,6 +866,56 @@ reply_markup: {
 })
 
 
+bot.action('konusmayadevam11', ctx=> {
+    ctx.deleteMessage();
+
+
+bot.telegram.sendMessage(ctx.chat.id, "(Sabah oldu uyandınız, Emrah kahvaltı hazırlamış)\n\nEmrah: Lina bak en sevdiğin kahvaltılıklar, sabah köyün bakkalından köy yumurtası bile aldım.\n\nLina: Emrah benimle dalga mı geçiyorsun, dün neler gördüğümü biliyor musun?\n\nAsya: Ne gördün kızım anlatsana.\n\nLina: Muhtar, muhtarın evine gittim ayakları tersti inanmayacaksınız ama gerçekten ayakları tersti.\n\nHakan: Bu ne anlama geliyor?\n\nEmrah: Sana oyun oynamışlar Lina, bundan sonra bir yere gidiyorsak hep beraber gideceğiz.",{
+
+
+reply_markup: {
+
+    inline_keyboard: [
+          [
+              
+            {text: 'Konuşmaya devam et', callback_data: 'konusmayadevam12'},
+               
+                
+                
+          ],
+
+        
+    ]
+
+}
+})
+
+})
+bot.action('konusmayadevam12', ctx=> {
+    ctx.deleteMessage();
+
+
+bot.telegram.sendMessage(ctx.chat.id, "Lina: Emrah, sandığı burada bırakıp İstanbul'a geri dönmek istiyorum.\n\nEmrah: Sen hemen pes edicek bir kız değilsin Lina.\n\nLina: Emrah gördüğüm şey gerçekti, şaka değildi.\n\nEmrah: Hep öyle şeyler düşündüğün için öyle bir şey görmüşsün Lina, takma bu kadar.\n\nHakan: Abi ne takmaması ya, gerçekten bu köyde birşeyler varsa ne bok yiyeceğiz?",{
+
+
+reply_markup: {
+
+    inline_keyboard: [
+          [
+              
+            {text: 'Konuşmaya devam et', callback_data: 'konusmayadevam12'},
+               
+                
+                
+          ],
+
+        
+    ]
+
+}
+})
+
+})
 bot.action('muhtarinevegir', ctx=> {
     ctx.deleteMessage();
 
