@@ -1,3 +1,4 @@
+const { connect } = require('mongoose');
 const { Telegraf, Context } = require('telegraf')
 const bot = new Telegraf('1606946477:AAETCm_Ikx2PCTUpwGDn64Oq5HY3ifzeVN0')
 
@@ -1351,7 +1352,7 @@ reply_markup: {
 })
 })
 
-konusmayadevam2
+
 bot.action('soldangit1', ctx=> {
     ctx.deleteMessage(),
     ctx.deleteChatPhoto(),
@@ -1897,7 +1898,7 @@ ctx.deleteMessage();
 
 
     
-
+connect();
 bot.launch({
     webhook: {
       domain: 'korkuoyunubot.herokuapp.com',
