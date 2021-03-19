@@ -353,7 +353,7 @@ bot.action('devamkonusmake', ctx=> {
     ctx.deleteMessage();
 
 
-bot.telegram.sendMessage(ctx.chat.id, "Hakan: Emrah emin misin büyü olduğuna?\n\nEmrah: Evet, adım kadar eminim büyü bunlar içindeki kolye de büyülü olabilir.(Sandığın içini karıştırırken bir adres yazılı not buldular.)\n\nAsya: Bence buraya gitsek bize yardımcı olurlar.\n\nHakan: Aşkım saçmalama bilmediğin bir yere mi gidiceksin?\n\nAsya: Ben gideceğim Hakan, gelip gelmemeyi sen bilirsin. En azından bilgi sahibi oluruz, Lina'yı tek başına bırakamam.\n\nLina: Bencede gitmeliyiz, yoksa bu sandığın anlamını bulamayız.\n\nEmrah: Yarın sabah hepinizi kapının önünden alacağım, köy bize 3-4 saat uzaklıkta çantanızı hazırlayın.\n\n(Herkes evlerine dağıldı)",{
+bot.telegram.sendMessage(ctx.chat.id, "Hakan: Emrah emin misin büyü olduğuna?\n\nEmrah: Evet, adım kadar eminim büyü bunlar içindeki kolye de büyülü olabilir.(Sandığın içini karıştırırken bir adres yazılı not buldular)\n\nAsya: Bence buraya gitsek bize yardımcı olurlar.\n\nHakan: Aşkım saçmalama bilmediğin bir yere mi gidiceksin?\n\nAsya: Ben gideceğim Hakan, gelip gelmemeyi sen bilirsin. En azından bilgi sahibi oluruz, Lina'yı tek başına bırakamam.\n\nLina: Bencede gitmeliyiz, yoksa bu sandığın anlamını bulamayız.\n\nEmrah: Yarın sabah hepinizi kapının önünden alacağım, köy bize 3-4 saat uzaklıkta çantanızı hazırlayın.\n\n(Herkes evlerine dağıldı)",{
 
 
 reply_markup: {
@@ -528,7 +528,7 @@ bot.action('uyu1', ctx=> {
     ctx.deleteMessage();
 
 
-bot.telegram.sendMessage(ctx.chat.id, "(Sabah uyandın, kıyafetlerini giydin kapının önüne çıkıp Emrah'ı beklemeye başladın.)\n\n(Emrah arabayla seni evinin önünden aldı bütün arkadaşların arabada)\n\nLina: Günaydın herkese, umarım bu yol boyunca kötü şeylerle karşılaşmayız.\n\nEmrah: Merak etme Lina, öyle bir şey olmayacak.\n\nHakan: Bende öyle umuyorum (tshirt'ünü kaldırarak belindeki kuru sıkı tabancayı gösterir) en azından korkutmak için işimizi görür.\n\nAsya: (gülmeye başlar) çok abartıyorsun Hakan.",{
+bot.telegram.sendMessage(ctx.chat.id, "(Sabah uyandın, kıyafetlerini giydin kapının önüne çıkıp Emrah'ı beklemeye başladın)\n\n(Emrah arabayla seni evinin önünden aldı bütün arkadaşların arabada)\n\nLina: Günaydın herkese, umarım bu yol boyunca kötü şeylerle karşılaşmayız.\n\nEmrah: Merak etme Lina, öyle bir şey olmayacak.\n\nHakan: Bende öyle umuyorum (Tshirt'ünü kaldırarak belindeki kuru sıkı tabancayı gösterir) en azından korkutmak için işimizi görür.\n\nAsya: (Gülmeye başlar) çok abartıyorsun Hakan.",{
 
 
 reply_markup: {
@@ -557,7 +557,7 @@ bot.action('devamkonusmake2', ctx=> {
     ctx.deleteMessage();
 
 
-bot.telegram.sendMessage(ctx.chat.id, "(Yolculuğun üzerinden 3.30 saat geçti, koyunlu tabelasını gördün ve hava kararmaya başladı.)\n\nEmrah: Navigasyon kafayı yedi, olmayan yolları gösteriyor. Bu iki yoldan hangisine girmemiz gerekiyor acaba?\n\nHakan: Filmlerdeki olaylara döndü bu, yollardan biri çok tehlikeli oluyor ya. (gülmeye başlar)\n\n(Arkadaşların hangi yoldan gidilmesi gerektiğini senin belirlemeni istiyorlar) ",{
+bot.telegram.sendMessage(ctx.chat.id, "(Yolculuğun üzerinden 3.30 saat geçti, koyunlu tabelasını gördün ve hava kararmaya başladı)\n\nEmrah: Navigasyon kafayı yedi, olmayan yolları gösteriyor. Bu iki yoldan hangisine girmemiz gerekiyor acaba?\n\nHakan: Filmlerdeki olaylara döndü bu, yollardan biri çok tehlikeli oluyor ya. (gülmeye başlar)\n\n(Arkadaşların hangi yoldan gidilmesi gerektiğini senin belirlemeni istiyorlar) ",{
 
 
 reply_markup: {
@@ -617,7 +617,7 @@ reply_markup: {
 
 bot.action('konusmayadevam21', ctx=> {
     ctx.deleteMessage();
-bot.telegram.sendMessage(ctx.chat.id, "Lina: Ben babamın elinden almadım kimseyi, annem öldüğünden beri hiçbir kadınla görüşmedi o.\n\nKara Çarşaflı Kadın: Bana sırılsıklam aşıktı (Gülmeye başlar ve birden etraf kararır)\n\nLina: Nereye gitti o kadın?\n\nAdam: Şimdi olanları izle.\n\n(Vücudunun bütün her yeri sabit sadece kafanı çevirebiliyorsun ve gözünün önünde Asya'ya işkence yapıyorlar)\n\nLina: Lütfen bırakın onu lütfen!  ",{
+bot.telegram.sendMessage(ctx.chat.id, "Lina: Ben babamın elinden almadım kimseyi, annem öldüğünden beri hiçbir kadınla görüşmedi o.\n\nKara Çarşaflı Kadın: Bana sırılsıklam aşıktı (Gülmeye başlar ve birden etraf kararır)\n\nLina: Nereye gitti o kadın?\n\n(Vücudunun bütün her yeri sabit sadece kafanı çevirebiliyorsun ve gözünün önünde Asya'ya işkence yapıyorlar)\n\nLina: Lütfen bırakın onu lütfen!  ",{
 reply_markup: {
 
     inline_keyboard: [
@@ -669,6 +669,8 @@ ctx.replyWithVideo({
 }
 )
 })
+
+
 bot.action('asyayisec', ctx=> {
     ctx.deleteMessage(),
     ctx.deleteChatPhoto(),
@@ -705,7 +707,7 @@ ctx.replyWithVideo({
 })
 bot.action('emraholdu', ctx=> {
     ctx.deleteMessage();
-bot.telegram.sendMessage(ctx.chat.id, "Lina: Emrah, Emrah özür dilerim.\n\nAdam: Asya'yı kurtarmak istiyorsan sandığın içindeki kolyeyi al, kapısında işaret bulunan evi bul ve kolyeyi o bebeğin eline ver.\n\nNe, ne, ne bebeği?(Kendinden geçtin ve bayıldın, uyandığında misafir evindeydin)",{
+bot.telegram.sendMessage(ctx.chat.id, "Lina: Emrah, Emrah özür dilerim.\n\nAdam: Asya'yı kurtarmak istiyorsan sandığın içindeki kolyeyi al, kapısında işaret bulunan evi bul ve kolyeyi o bebeğin eline ver.\n\nNe, ne, ne bebeği? (Kendinden geçtin ve bayıldın, uyandığında misafir evindeydin)",{
 reply_markup: {
     inline_keyboard: [
           [
@@ -729,7 +731,7 @@ reply_markup: {
 }
 })
 })
-bot.action('kendinifedaet', ctx=> {
+bot.action('ikisideoldu', ctx=> {
     ctx.deleteMessage();
 bot.telegram.sendMessage(ctx.chat.id, "Adam birden etraftan kayboldu, odada Emrah ile Asya'nın ölüsü ve sen kaldın. Onların ölümüne sebep olduğun için yerdeki bıçaklardan birini alarak kendini öldürdün.\n\n Karakterin öldü, bu benim ilk oyunumdu önerileriniz için @izzetcik ulaşabilirsiniz. OYUNU TEKRAR OYNAMAK İÇİN /start",{
 
@@ -767,7 +769,7 @@ ctx.replyWithPhoto({
 })
 bot.action('konusmayadevam26', ctx=> {
     ctx.deleteMessage();
-bot.telegram.sendMessage(ctx.chat.id, "Lina: Hepsi benim hatam, iki arkadaşımın öldürülmesi de benim hatam fakat birini kurtarmam gerekiyor.\n\n (Misafir evine gittin, evden büyük bir ekmek bıçağı alarak arkadaşlarının öldüğü kulübeye doğru koşmaya başladın, içeri girdin ve adamın hala masanın etrafında oturduğunu gördün)",{
+bot.telegram.sendMessage(ctx.chat.id, "Lina: Hepsi benim hatam, iki arkadaşımın öldürülmesi de benim hatam fakat birini kurtarmam gerekiyor.\n\n(Misafir evine gittin, evden büyük bir ekmek bıçağı alarak arkadaşlarının öldüğü kulübeye doğru koşmaya başladın, içeri girdin ve adamın hala masanın etrafında oturduğunu gördün)",{
 reply_markup: {
     inline_keyboard: [
           [
@@ -797,7 +799,7 @@ reply_markup: {
 })
 bot.action('kulubekac', ctx=> {
     ctx.deleteMessage();
-bot.telegram.sendMessage(ctx.chat.id, "Kulübeden çıktın ve misafir evine ulaşıp arabanın anahtarını aldın, arabaya binip köyden çıkmaya çalıştın.  Telefonun çektiği bir yerde 156'yı arıyarak olanları anlattın ve arkadaşlarının öldüğünü söyledin. Sen olayı anlattıktan sonra telefondan arapça bir ses geldi sen telefonu kapatamadan görünmeyen bir varlık boynunu kırarak seni öldürdü.\n\nBu benim ilk oyunumdu oynadığınız için teşekkür ederim, önerileriniz için bana ulaşabilirsiniz. / @izzetcik / /start",{
+bot.telegram.sendMessage(ctx.chat.id, "Kulübeden çıktın ve misafir evine ulaşıp arabanın anahtarını aldın, arabaya binip köyden çıkmaya çalıştın. Telefonun çektiği bir yerde 156'yı arıyarak olanları anlattın ve arkadaşlarının öldüğünü söyledin. Sen olayı anlattıktan sonra telefondan arapça bir ses geldi sen telefonu kapatamadan görünmeyen bir varlık boynunu kırarak seni öldürdü.\n\nBu benim ilk oyunumdu oynadığınız için teşekkür ederim, önerileriniz için bana ulaşabilirsiniz. / @izzetcik / /start",{
 
 })
 })
@@ -889,7 +891,7 @@ bot.action('konusmayadevam2', ctx=> {
     ctx.deleteMessage();
 
 
-bot.telegram.sendMessage(ctx.chat.id, "(arabadan çığlık sesi geldi, ikiside arabaya koştular)\n\nEmrah: Ne oldu Lina?\n\nLina: Cama yaşlı bir adam tıklayıp gitti lütfen gidelim artık köye binin arabaya.\n\n(Arabaya binip köy yoluna devam ettiler.)",{
+bot.telegram.sendMessage(ctx.chat.id, "(Arabadan çığlık sesi geldi, ikiside arabaya koştular)\n\nEmrah: Ne oldu Lina?\n\nLina: Cama yaşlı bir adam tıklayıp gitti lütfen gidelim artık köye binin arabaya.\n\n(Arabaya binip köy yoluna devam ettiler)",{
 
 
 reply_markup: {
@@ -953,7 +955,7 @@ bot.action('evegit2', ctx=> {
     ctx.deleteMessage();
 
 
-bot.telegram.sendMessage(ctx.chat.id, "Emrah: Ne gördüğünü anlatsana Lina.\n\nLina:Duvarda arapça yazılar gördüm birden gözüm karardı işte.\n\nAsya: Emrah sen neden kızı orda bıraktın, zaten kendimi kötü hissediyorum yolculuğun başından beri.\n\nHakan: Tamam şimdi sakin olalım, Lina'nın durumu iyi konuşmamız gereken farklı konular var, Emrah sandığı getirdin mi eve?\n\nEmrah: Evet yatak odasında.\n\nLina: Ben getireyim. ",{
+bot.telegram.sendMessage(ctx.chat.id, "Emrah: Ne gördüğünü anlatsana Lina.\n\nLina: Duvarda arapça yazılar gördüm birden gözüm karardı işte.\n\nAsya: Emrah sen neden kızı orda bıraktın, zaten kendimi kötü hissediyorum yolculuğun başından beri.\n\nHakan: Tamam şimdi sakin olalım, Lina'nın durumu iyi konuşmamız gereken farklı konular var, Emrah sandığı getirdin mi eve?\n\nEmrah: Evet yatak odasında.\n\nLina: Ben getireyim. ",{
 
 
 reply_markup: {
@@ -1006,7 +1008,7 @@ bot.action('konusmayadevam8', ctx=> {
     ctx.deleteMessage();
 
 
-bot.telegram.sendMessage(ctx.chat.id, "Emrah: Aslında biz köye bu sandığı araştırmak için gelmiştik.\n\nMuhtar: İçine bakabilir miyim?\n\nLina: Bakabilirsiniz.\n\n(Muhtar sandığı açtı, elini içindeki büyü kağıtlarında gezdirdi ve kolyeyi eline aldı sonra tekrar sandığın içine bıraktı)\n\nMuhtar: Gidin bu köyden.\n\nEmrah: Neyden bahsediyorsun muhtar ne oldu?\n\nMuhtar: Akşam olmadan gidin bu köyden(cümlesini bitirdikten sonra hiçbir şey demeden evden çıktı)\n\nAsya: Ne oluyor ya?",{
+bot.telegram.sendMessage(ctx.chat.id, "Emrah: Aslında biz köye bu sandığı araştırmak için gelmiştik.\n\nMuhtar: İçine bakabilir miyim?\n\nLina: Bakabilirsiniz.\n\n(Muhtar sandığı açtı, elini içindeki büyü kağıtlarında gezdirdi ve kolyeyi eline aldı sonra tekrar sandığın içine bıraktı)\n\nMuhtar: Gidin bu köyden.\n\nEmrah: Neyden bahsediyorsun muhtar ne oldu?\n\nMuhtar: Akşam olmadan gidin bu köyden (Cümlesini bitirdikten sonra hiçbir şey demeden evden çıktı)\n\nAsya: Ne oluyor ya?",{
 
 
 reply_markup: {
@@ -1033,7 +1035,7 @@ bot.action('incele2', ctx=> {
     ctx.deleteMessage();
 
 
-bot.telegram.sendMessage(ctx.chat.id, "(tam sandığı açarken evin kapısı çalmaya başladı)\n\nLina: Kim bu saatte?\n\nEmrah: Ben bakarım.(kapıyı açar, muhtar gelmiş)\n\nEmrah: Hoş geldin muhtar bir şey mi oldu?\n\nMuhtar: Öyle bakınmaya geldim, bu sandık neyin nesi? ",{
+bot.telegram.sendMessage(ctx.chat.id, "(Tam sandığı açarken evin kapısı çalmaya başladı)\n\nLina: Kim bu saatte?\n\nEmrah: Ben bakarım. (Kapıyı açar, muhtar gelmiş)\n\nEmrah: Hoş geldin muhtar bir şey mi oldu?\n\nMuhtar: Öyle bakınmaya geldim, bu sandık neyin nesi? ",{
 
 
 reply_markup: {
@@ -1059,7 +1061,7 @@ bot.action('bayil', ctx=> {
     ctx.deleteMessage();
 
 
-bot.telegram.sendMessage(ctx.chat.id, "(Telefonu çıkardın Emrah'ı aramaya çalışıyordun, duvar yazısına bakarken birden başın döndü bayıldın. 15 dakika sonra Emrah'ın burnuna kolonya koklatmasıyla uyandın.)\n\nEmrah: Lina iyi misin?\n\nLina: Evet iyiyim, duvar yazısına bakıyordum birden gözlerim karardı.\n\nAsya: Lina hangi duvar yazısı, bu duvarlarda yazı falan yok.\n\nLina: Ama, ama ben gördüm nasıl olur bu.\n\nHakan: Muhtar evi ayarladı gidince konuşuruz sen iyiysen sorun yok Lina.",{
+bot.telegram.sendMessage(ctx.chat.id, "(Telefonu çıkardın Emrah'ı aramaya çalışıyordun, duvar yazısına bakarken birden başın döndü bayıldın. 15 dakika sonra Emrah'ın burnuna kolonya koklatmasıyla uyandın)\n\nEmrah: Lina iyi misin?\n\nLina: Evet iyiyim, duvar yazısına bakıyordum birden gözlerim karardı.\n\nAsya: Lina hangi duvar yazısı, bu duvarlarda yazı falan yok.\n\nLina: Ama, ama ben gördüm nasıl olur bu.\n\nHakan: Muhtar evi ayarladı gidince konuşuruz sen iyiysen sorun yok Lina.",{
 
 
 reply_markup: {
@@ -1162,7 +1164,7 @@ bot.action('konusmayadevam13', ctx=> {
     ctx.deleteMessage();
 
 
-bot.telegram.sendMessage(ctx.chat.id, "(Akşam oldu)\n\nLina: Emrah, Hakan'ın telefonuna hala ulaşılamıyor mu?\n\nEmrah: Hayır telefonlar çekmiyor ki, akşam oldu zaten korkup gelir o.\n\nAsya: Ben Hakan'ı aramaya gidiyorum, çok üstüne gittim çocuğun.\n\nLina: Hep birlikte gidelim, kimsenin tek gitmei güvenli değil.",{
+bot.telegram.sendMessage(ctx.chat.id, "(Akşam oldu)\n\nLina: Emrah, Hakan'ın telefonuna hala ulaşılamıyor mu?\n\nEmrah: Hayır telefonlar çekmiyor ki, akşam oldu zaten korkup gelir o.\n\nAsya: Ben Hakan'ı aramaya gidiyorum, çok üstüne gittim çocuğun.\n\nLina: Hep birlikte gidelim, kimsenin tek gitmesi güvenli değil.",{
 
 
 reply_markup: {
@@ -1330,7 +1332,7 @@ ctx.replyWithPhoto({
     source: "yaslikadin.jpg"
 },{
 
-    caption: "(Yolda biraz ilerlediniz, yol kenarında yaşlı bir kadının durduğunu farkettiniz.)\n\nLina: Hasta falan mı acaba?\n\nEmrah: Ben bi inip bakayım, Hakan sende gel.\n\nAsya: Lina ben korkmaya başladım, kadın nedense ürpertti beni.\n\n(Hakan ve Emrah arabadan inip yaşlı kadının yanına gittiler)\n\nEmrah: Teyze bir şeye ihtiyacın mı var, neden burada bekliyorsun?(kadın cevap vermiyor)\n\nHakan: Teyze bizi duyuyor musun?",
+    caption: "(Yolda biraz ilerlediniz, yol kenarında yaşlı bir kadının durduğunu farkettiniz)\n\nLina: Hasta falan mı acaba?\n\nEmrah: Ben bi inip bakayım, Hakan sende gel.\n\nAsya: Lina ben korkmaya başladım, kadın nedense ürpertti beni.\n\n(Hakan ve Emrah arabadan inip yaşlı kadının yanına gittiler)\n\nEmrah: Teyze bir şeye ihtiyacın mı var, neden burada bekliyorsun? (Kadın cevap vermiyor)\n\nHakan: Teyze bizi duyuyor musun?",
 
     reply_markup: {
 
@@ -1364,7 +1366,7 @@ ctx.replyWithAudio({
     source: "kapiacilma.mp3"
 },{
 
-    caption: "(Kapı açıldı önden Emrah girdi)\n\nEmrah: Kimse var mı? Bu muhtar bizimle dalga mı geçiyor?\n\n(Kapı aniden sert şekilde kapanır, Asya kapıyı açmaya çalışır)\n\nAsya: Kapı açılmıyor nereye düştük lan biz?!\n\nLina: Kimse yok mu, sadece arkadaşımıza bakmaya gelmiştik.\n\n(Kulübenin bir odasından ses geliyor)\n\nEmrah: Ben bakarım siz bekleyin.\n\nLina: Hayır bizde geliyoruz.",
+    caption: "(Kapı açıldı önden Emrah girdi)\n\nEmrah: Kimse var mı? Bu muhtar bizimle dalga mı geçiyor?\n\n(Kapı aniden sert şekilde kapanır, Asya kapıyı açmaya çalışır)\n\nAsya: Kapı açılmıyor nereye düştük lan biz?!\n\nLina: Kimse yok mu, sadece arkadaşımıza bakmaya gelmiştik.\n\n(Kulübenin bir odasından ses geliyor)",
 
     reply_markup: {
 
@@ -1543,7 +1545,7 @@ ctx.replyWithAudio({
     source: "sesler.mp3"
 },{
 
-    caption: "❗️❗️(BU SESİ 30 SANİYE DİNLEMEK OYUN KEYFİNİZİ ARTTIRACAKTIR)\n\nDışarı çıktın ve muhtarın evini arıyorsun, değişik değişik sesler duymaya başladın)\n\nLina: Bu sesler ne ya, Emrah'ı arıyamıyorum telefonum kapanmış.\n\n(seslerin daha çok arttığını farkediyorsun, biraz yürüdükten sonra karşına biri çıkıyor ve muhtarın evini tarif ediyor güvenmekte tereddüt ediyorsun)",
+    caption: "❗️❗️(BU SESİ 30 SANİYE DİNLEMEK OYUN KEYFİNİZİ ARTTIRACAKTIR)\n\nDışarı çıktın ve muhtarın evini arıyorsun, değişik değişik sesler duymaya başladın)\n\nLina: Bu sesler ne ya, Emrah'ı arıyamıyorum telefonum kapanmış.\n\n(Seslerin daha çok arttığını farkediyorsun, biraz yürüdükten sonra karşına biri çıkıyor ve muhtarın evini tarif ediyor güvenmekte tereddüt ediyorsun)",
 
     reply_markup: {
 
@@ -1572,6 +1574,20 @@ ctx.replyWithAudio({
 
 )
 
+})
+
+bot.action('baskasor2', ctx=> {
+    ctx.deleteMessage();
+bot.telegram.sendMessage(ctx.chat.id, "Yoldan geçen başka birine sordun fakat o da aynı evi gösterdi",{
+reply_markup: {
+    inline_keyboard: [
+          [
+              
+            {text: 'Muhtarın evine gir', callback_data: 'muhtarinevegir'},    
+          ], 
+    ]
+}
+})
 })
 
 
