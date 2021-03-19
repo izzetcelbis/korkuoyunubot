@@ -574,8 +574,6 @@ bot.action('devamkonusmake2', ctx=> {
 
 
 bot.telegram.sendMessage(ctx.chat.id, "(Yolculuğun üzerinden 3.50 saat geçti, koyunlu tabelasını gördün ve hava kararmaya başladı)\n\nEmrah: Navigasyon kafayı yedi, olmayan yolları gösteriyor. Bu iki yoldan hangisine girmemiz gerekiyor acaba?\n\nHakan: Filmlerdeki olaylara döndü bu, yollardan biri çok tehlikeli oluyor ya. (gülmeye başlar)\n\n(Arkadaşların hangi yoldan gidilmesi gerektiğini senin belirlemeni istiyorlar) ",{
-
-
 reply_markup: {
 
     inline_keyboard: [
