@@ -1,9 +1,22 @@
 const { Telegraf, Context } = require('telegraf')
 const bot = new Telegraf('1606946477:AAETCm_Ikx2PCTUpwGDn64Oq5HY3ifzeVN0')
+const mongoose = require('mongoose');
 
 
+function connect() {
+    if (connected()) {
+      return;
+    }
+    return mongoose.connect("mongodb+srv://korkuoyunubot:<berkveizzet123>@cluster0.iyff8.mongodb.net/myFirstDatabase?retryWrites=true&w=majority", {
+      useCreateIndex: true,
+      useNewUrlParser: true,
+      useUnifiedTopology: true,
+    });
+  }
 
-
+  function connected() {
+    return mongoose.connection.readyState === 1;
+  }
 bot.start((ctx) => {
    
    ctx.reply(ctx.from.first_name+" selam, oyunumuza hoşgeldin. Karakterleri incelemeye başla ve oyunu başlat. \n ",{
@@ -1390,6 +1403,25 @@ ctx.replyWithAudio({
 )
 
 })
+bot.action('konusmayadevam30', ctx=> {
+    ctx.deleteMessage();
+bot.telegram.sendMessage(ctx.chat.id, "Kadın: Arkadaşınızı almaya mı geldiniz?\n\nEmrah: Sen kimsin? Hakan nerede?\n\nKadın: Hakan öldü.\n\nEmrah: Ne? Ne ölmesinden bahsediyorsun sen?\n\n(Birden kulübe sallanmaya başlar ve her yer kararır kimse kimseyi göremez)\n\nAsya: Hakan!",{
+reply_markup: {
+    inline_keyboard: [
+          [
+              
+            {text: "Asya'nın baktığı yere bak", callback_data: 'asyabak1'},    
+          ], 
+    ]
+}
+})
+})
+
+
+
+
+
+
 
 bot.action('odayabak2', ctx=> {
     ctx.deleteMessage(),
@@ -1401,14 +1433,14 @@ ctx.replyWithPhoto({
     source: "korkukadin.jpg"
 },{
 
-    caption: "(Tam odaya ilerlerken karşınıza yaşlı bir kadın çıktı)\n\nKadın: Arkadaşınızı almaya mı geldiniz?\n\nEmrah: Sen kimsin? Hakan nerede?\n\nKadın: Hakan öldü.\n\nEmrah: Ne? Ne ölmesinden bahsediyorsun sen?\n\n(Birden kulübe sallanmaya başlar ve her yer kararır kimse kimseyi göremez)\n\nAsya: Hakan!",
+    caption: "(Tam odaya ilerlerken karşınıza yaşlı bir kadın çıktı)",
 
     reply_markup: {
 
         inline_keyboard: [
             [
                 
-                  {text: "Asya'nın baktığı yere bak", callback_data: 'asyayabak1'},
+                  {text: "Devam et", callback_data: 'konusmayadevam30'},
                  
                   
                   
@@ -1837,8 +1869,8 @@ ctx.deleteMessage();
    
 
 
-
-
+    
+connect();
 bot.launch({
     webhook: {
       domain: 'korkuoyunubot.herokuapp.com',
