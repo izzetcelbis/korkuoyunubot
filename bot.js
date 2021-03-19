@@ -662,36 +662,68 @@ ctx.replyWithVideo({
     reply_markup: {
         inline_keyboard: [
             [ 
-                  {text: "Devam et", callback_data: 'konusmayadevam20'},    
+                  {text: "Devam et", callback_data: 'emraholdu'},    
             ],
         ]
     } 
 }
 )
 })
-bot.action('emrahisegc', ctx=> {
+bot.action('asyayisec', ctx=> {
+    ctx.deleteMessage(),
+    ctx.deleteChatPhoto(),
+ctx.replyWithVideo({
+    source: "kanbu.jpg"
+},{
+    caption: "Asya elinde bıçakla olduğun odaya girdi ona bağırdın fakat kendinde değildi, bıçağı kendi kalbine soktu.",
+    reply_markup: {
+        inline_keyboard: [
+            [ 
+                  {text: "Devam et", callback_data: 'asyaoldu'},    
+            ],
+        ]
+    } 
+}
+)
+})
+bot.action('kendinifedaet', ctx=> {
+    ctx.deleteMessage(),
+    ctx.deleteChatPhoto(),
+ctx.replyWithVideo({
+    source: "kanbu.jpg"
+},{
+    caption: "Verdiğin cevaba çok sinirlendiler, iki arkadaşını da kurban ettiğini söylediler bir kaç saniye sonra içeriye ellerinde bıçakla Emrah ve Asya girdi, ikisine de seslendin fakat kendilerinde değillerdi. İkisi de kalbine ellerindeki bıçakları soktular. ",
+    reply_markup: {
+        inline_keyboard: [
+            [ 
+                  {text: "Devam et", callback_data: 'ikisideoldu'},    
+            ],
+        ]
+    } 
+}
+)
+})
+bot.action('emraholdu', ctx=> {
     ctx.deleteMessage();
-bot.telegram.sendMessage(ctx.chat.id, "Emrah elinde bıçakla olduğun odaya girdi ona bağırdın fakat kendinde değildi, bıçağı kendi kalbine soktu." ,{
+bot.telegram.sendMessage(ctx.chat.id, "Lina: Emrah, Emrah özür dilerim.\n\nAdam: Asya'yı kurtarmak istiyorsan sandığın içindeki kolyeyi al, kapısında işaret bulunan evi bul ve kolyeyi o bebeğin eline ver.\n\nNe, ne, ne bebeği?(Kendinden geçtin ve bayıldın, uyandığında misafir evindeydin)",{
 reply_markup: {
-
     inline_keyboard: [
           [
               
-            {text: 'Devam et', callback_data: 'emraholdu'},    
+            {text: 'Devam et', callback_data: 'konusmayadevam25'},    
           ], 
     ]
 }
 })
 })
-bot.action('asyayisec', ctx=> {
+bot.action('asyaoldu', ctx=> {
     ctx.deleteMessage();
-bot.telegram.sendMessage(ctx.chat.id, "Asya elinde bıçakla olduğun odaya girdi ona bağırdın fakat kendinde değildi, bıçağı kendi kalbine soktu. ",{
+bot.telegram.sendMessage(ctx.chat.id, "Lina: Asya, Asya özür dilerim.\n\nAdam: Emrah'ı kurtarmak istiyorsan sandığın içindeki kolyeyi al, kapısında işaret bulunan evi bul ve kolyeyi o bebeğin eline ver.\n\nNe, ne, ne bebeği?(Kendinden geçtin ve bayıldın, uyandığında misafir evindeydin)",{
 reply_markup: {
-
     inline_keyboard: [
           [
               
-            {text: 'Devam et', callback_data: 'asyaoldu'},    
+            {text: 'Devam et', callback_data: 'konusmayadevam25'},    
           ], 
     ]
 }
@@ -699,17 +731,87 @@ reply_markup: {
 })
 bot.action('kendinifedaet', ctx=> {
     ctx.deleteMessage();
-bot.telegram.sendMessage(ctx.chat.id, "Aldıkları cevaptan hiç hoşlanmadılar, Emrah ve Asya ellerinde bıçakla odaya girdiler, onlara bağırdın fakat kendilerinde değiller. İkiside bıçağı kalplerine soktular.",{
-reply_markup: {
+bot.telegram.sendMessage(ctx.chat.id, "Adam birden etraftan kayboldu, odada Emrah ile Asya'nın ölüsü ve sen kaldın. Onların ölümüne sebep olduğun için yerdeki bıçaklardan birini alarak kendini öldürdün.\n\n Karakterin öldü, bu benim ilk oyunumdu önerileriniz için @izzetcik ulaşabilirsiniz. OYUNU TEKRAR OYNAMAK İÇİN /start",{
 
+})
+})
+bot.action('konusmayadevam25', ctx=> {
+    ctx.deleteMessage();
+bot.telegram.sendMessage(ctx.chat.id, "Lina: Ben eve nasıl geldim, Allah'ım lütfen bana yardım et bir kişinin daha ölümüne sebep olmak istemiyorum.\n\n(Kolye'yi aldın ve dışarıya çıkıp kapısı işaretli evi aramaya başladın)",{
+reply_markup: {
     inline_keyboard: [
           [
               
-            {text: 'Devam et', callback_data: 'ikisideoldı'},    
+            {text: 'Evi aramaya devam et', callback_data: 'eviaramayadevam'},    
           ], 
     ]
 }
 })
+})
+bot.action('eviaramayadevam', ctx=> {
+    ctx.deleteMessage(),
+    ctx.deleteChatPhoto(),
+ctx.replyWithPhoto({
+    source: "bubebek.jpg"
+},{
+    caption: "Kapısı işaretli evi buldun ve kapısının açık olduğunu farkedip içeriye girdin ve evin içinde battaniyeye sarılı bir bebek gördün, kolyeyi bebeğin ellerine sıkıştırdın ve arkanı dönerek evden çıktın.\n\n",
+    reply_markup: {
+        inline_keyboard: [
+            [ 
+                  {text: "Devam et", callback_data: 'konusmayadevam26'},    
+            ],
+        ]
+    } 
+}
+)
+})
+bot.action('konusmayadevam26', ctx=> {
+    ctx.deleteMessage();
+bot.telegram.sendMessage(ctx.chat.id, "Lina: Hepsi benim hatam, iki arkadaşımın öldürülmesi de benim hatam fakat birini kurtarmam gerekiyor.\n\n (Misafir evine gittin, evden büyük bir ekmek bıçağı alarak arkadaşlarının öldüğü kulübeye doğru koşmaya başladın, içeri girdin ve adamın hala masanın etrafında oturduğunu gördün)",{
+reply_markup: {
+    inline_keyboard: [
+          [
+              
+            {text: 'Elindeki bıçak ile adamı öldür', callback_data: 'adamioldur'},    
+          ], 
+    ]
+}
+})
+})
+bot.action('adamioldur', ctx=> {
+    ctx.deleteMessage();
+bot.telegram.sendMessage(ctx.chat.id, "(Adamı öldürdün, içeriden Hakan, Emrah ve Asya'nın sesi geliyor",{
+reply_markup: {
+    inline_keyboard: [
+          [
+              
+            {text: 'Kulübeden kaç', callback_data: 'kulubekac'},    
+          ], 
+          [
+              
+            {text: 'Sesin geldiği yere bak', callback_data: 'sesingeldigiyer'},    
+          ], 
+    ]
+}
+})
+})
+bot.action('kulubekac', ctx=> {
+    ctx.deleteMessage();
+bot.telegram.sendMessage(ctx.chat.id, "Kulübeden çıktın ve misafir evine ulaşıp arabanın anahtarını aldın, arabaya binip köyden çıkmaya çalıştın.  Telefonun çektiği bir yerde 156'yı arıyarak olanları anlattın ve arkadaşlarının öldüğünü söyledin. Sen olayı anlattıktan sonra telefondan arapça bir ses geldi sen telefonu kapatamadan görünmeyen bir varlık boynunu kırarak seni öldürdü.\n\nBu benim ilk oyunumdu oynadığınız için teşekkür ederim, önerileriniz için bana ulaşabilirsiniz. / @izzetcik / /start",{
+
+})
+})
+
+bot.action('sesingeldigiyer', ctx=> {
+    ctx.deleteMessage(),
+    ctx.deleteChatPhoto(),
+ctx.replyWithVideo({
+    source: "ikikadin.jpg"
+},{
+    caption: "Sesin geldiği yere doğru gittin, arkadaşların arkası dönük bir şekilde konuşuyorlardı, Asya'ya yaklaştın ve sırtına dokunarak iyi misin dedin. Üçüde arkasını döndü fakat arkadaşların değil üçüde cindi, seni öldürdüler. Bu benim ilk oyunumdu, tavsiye ve önerileriniz için bana ulaşabilirsiniz / @izzetcik / /start",
+   
+}
+)
 })
 bot.action('eltiizle', ctx=> {
     ctx.deleteMessage();
