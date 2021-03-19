@@ -1475,7 +1475,7 @@ ctx.replyWithPhoto({
 )
 
 })
-bot.action('asyayabak1', ctx=> {
+bot.action('asyabak1', ctx=> {
     ctx.deleteMessage(),
     ctx.deleteChatPhoto(),
 
