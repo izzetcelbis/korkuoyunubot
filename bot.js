@@ -1,22 +1,24 @@
 const { Telegraf, Context } = require('telegraf')
 const bot = new Telegraf('1606946477:AAETCm_Ikx2PCTUpwGDn64Oq5HY3ifzeVN0')
 const mongoose = require('mongoose');
+var connectionstring = "mongodb+srv://korkuoyunubot:<berkveizzet123>@cluster0.iyff8.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
+var MongoClient = require("mongodb").MongoClient;
 
 
-function connect() {
-    if (connected()) {
-      return;
-    }
-    return mongoose.connect("mongodb+srv://korkuoyunubot:<berkveizzet123>@cluster0.iyff8.mongodb.net/myFirstDatabase?retryWrites=true&w=majority", {
-      useCreateIndex: true,
-      useNewUrlParser: true,
-      useUnifiedTopology: true,
-    });
-  }
+MongoClient.connect(connectionstring, {useNewUrlParser : true},function(err,db){
+if (err) throw err;
+var dbo= db.db("korkuoyunubot");
+var verim = {isim: "Ali Kaya", il: "Yalova",};
+dbo.collection("oyuncuadi").insertOne(verim, function(err){
+if (err) throw err;
+console.log("Veri Eklendi!");
+db.close();
 
-  function connected() {
-    return mongoose.connection.readyState === 1;
-  }
+})
+ 
+});
+
+
 bot.start((ctx) => {
    
    ctx.reply(ctx.from.first_name+" selam, oyunumuza hoşgeldin. Karakterleri incelemeye başla ve oyunu başlat. \n ",{
