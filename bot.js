@@ -478,6 +478,24 @@ ctx.replyWithPhoto({
 
 })
 
+
+bot.action('konusmayadevam17', ctx=> {
+    ctx.deleteMessage(),
+    ctx.deleteChatPhoto(),
+ctx.replyWithVideo({
+    source: "masaya.mp4"
+},{
+    caption: "(Yaşlı bir adamın mum yaktığını görüyorsun ve masanın etrafına oturmanı söylüyor)\n\nLina: Amca çok korkuyorum lütfen arkadaşlarımın nerede olduğunu söyle.",
+    reply_markup: {
+        inline_keyboard: [
+            [ 
+                  {text: "Devam et", callback_data: 'konusmayadevam20'},    
+            ],
+        ]
+    } 
+}
+)
+})
 bot.action('bulusma', ctx=> {
     ctx.deleteMessage();
 
@@ -569,8 +587,130 @@ reply_markup: {
 
 })
 
+bot.action('konusmayadevam20', ctx=> {
+    ctx.deleteMessage();
 
 
+bot.telegram.sendMessage(ctx.chat.id, "Adam: Baban ölmüş öyle mi?\n\nLina: Evet öldü, babam ne alaka?\n\nAdam: Sana zarar vermek istiyorlar onlara çok büyük zarar vermişsin. Baban ile evli olan bir cinin eşyalarına zarar verip hepsini çöpe atmışsın.\n\nLina: Hayır, ben öyle bir şey yapmadım ne eşyası ne çöpe atması?\n\n(Birden adamın yanında kara çarşaflı bir kadın belirir)\n\nKara Çarşaflı Kadın: Babanı benim elimden aldın bende senin arkadaşlarını alacağım.",{
+
+
+reply_markup: {
+
+    inline_keyboard: [
+          [
+              
+            {text: 'Devam et', callback_data: 'konusmayadevam21'},
+               
+                
+                
+          ],
+        
+        
+    ]
+
+}
+})
+
+
+
+})
+
+bot.action('konusmayadevam21', ctx=> {
+    ctx.deleteMessage();
+bot.telegram.sendMessage(ctx.chat.id, "Lina: Ben babamın elinden almadım kimseyi, annem öldüğünden beri hiçbir kadınla görüşmedi o.\n\nKara Çarşaflı Kadın: Bana sırılsıklam aşıktı (Gülmeye başlar ve birden etraf kararır)\n\nLina: Nereye gitti o kadın?\n\nAdam: Şimdi olanları izle.\n\n(Vücudunun bütün her yeri sabit sadece kafanı çevirebiliyorsun ve gözünün önünde Asya'ya işkence yapıyorlar)\n\nLina: Lütfen bırakın onu lütfen!  ",{
+reply_markup: {
+
+    inline_keyboard: [
+          [
+              
+            {text: 'Devam et', callback_data: 'konusmayadevam22'},    
+          ], 
+    ]
+}
+})
+})
+
+bot.action('konusmayadevam22', ctx=> {
+    ctx.deleteMessage();
+bot.telegram.sendMessage(ctx.chat.id, "Adam: Senden bir arkadaşını kurban etmeni istiyorlar.\n\nLina: Hayır, hayır onları buraya ben sürükledim onlara ellemeyin bana istediğinizi yapabilirsiniz.\n\nAdam: Bir arkadaşını seçmen gerekiyor yoksa ikiside öldürülecek!",{
+reply_markup: {
+
+    inline_keyboard: [
+          [
+              
+            {text: "Emrah'ı seç", callback_data: 'emrahisec'},    
+          ], 
+          [
+              
+            {text: "Asya'yı seç", callback_data: 'asyayisec'},    
+          ], 
+          [
+              
+            {text: "Seni öldürmelerini söyle", callback_data: 'kendinifedaet'},    
+          ], 
+    ]
+}
+})
+})
+bot.action('emrahisec', ctx=> {
+    ctx.deleteMessage(),
+    ctx.deleteChatPhoto(),
+ctx.replyWithVideo({
+    source: "kanbu.jpg"
+},{
+    caption: "Emrah elinde bıçakla olduğun odaya girdi ona bağırdın fakat kendinde değildi, bıçağı kendi kalbine soktu.",
+    reply_markup: {
+        inline_keyboard: [
+            [ 
+                  {text: "Devam et", callback_data: 'konusmayadevam20'},    
+            ],
+        ]
+    } 
+}
+)
+})
+bot.action('emrahisegc', ctx=> {
+    ctx.deleteMessage();
+bot.telegram.sendMessage(ctx.chat.id, "Emrah elinde bıçakla olduğun odaya girdi ona bağırdın fakat kendinde değildi, bıçağı kendi kalbine soktu." ,{
+reply_markup: {
+
+    inline_keyboard: [
+          [
+              
+            {text: 'Devam et', callback_data: 'emraholdu'},    
+          ], 
+    ]
+}
+})
+})
+bot.action('asyayisec', ctx=> {
+    ctx.deleteMessage();
+bot.telegram.sendMessage(ctx.chat.id, "Asya elinde bıçakla olduğun odaya girdi ona bağırdın fakat kendinde değildi, bıçağı kendi kalbine soktu. ",{
+reply_markup: {
+
+    inline_keyboard: [
+          [
+              
+            {text: 'Devam et', callback_data: 'asyaoldu'},    
+          ], 
+    ]
+}
+})
+})
+bot.action('kendinifedaet', ctx=> {
+    ctx.deleteMessage();
+bot.telegram.sendMessage(ctx.chat.id, "Aldıkları cevaptan hiç hoşlanmadılar, Emrah ve Asya ellerinde bıçakla odaya girdiler, onlara bağırdın fakat kendilerinde değiller. İkiside bıçağı kalplerine soktular.",{
+reply_markup: {
+
+    inline_keyboard: [
+          [
+              
+            {text: 'Devam et', callback_data: 'ikisideoldı'},    
+          ], 
+    ]
+}
+})
+})
 bot.action('eltiizle', ctx=> {
     ctx.deleteMessage();
 
@@ -895,7 +1035,7 @@ bot.action('konusmayadevam12', ctx=> {
     ctx.deleteMessage();
 
 
-bot.telegram.sendMessage(ctx.chat.id, "Lina: Emrah, sandığı burada bırakıp İstanbul'a geri dönmek istiyorum.\n\nEmrah: Sen hemen pes edicek bir kız değilsin Lina.\n\nLina: Emrah gördüğüm şey gerçekti, şaka değildi.\n\nEmrah: Hep öyle şeyler düşündüğün için öyle bir şey görmüşsün Lina, takma bu kadar.\n\nHakan: Abi ne takmaması ya, gerçekten bu köyde birşeyler varsa ne bok yiyeceğiz?\n\nAsya: Hakan tamam biraz sakin ol.\n\nHakan: Ne sakinliği size uyup geldim ve burada neler olduğunu bile bilmiyoruz.\n\nAsya: Siktir git o zaman Hakan tamam mı? Siktir git!\n\nHakan: Sakın beni aramayın(Hakan kapıyı sertçe çarparak evden çıktı)\n\nAsya: Akşama gelir o.",{
+bot.telegram.sendMessage(ctx.chat.id, "Lina: Emrah, sandığı burada bırakıp İstanbul'a geri dönmek istiyorum.\n\nEmrah: Sen hemen pes edicek bir kız değilsin Lina. Hep öyle şeyler düşündüğün için öyle bir şey görmüşsün takma bu kadar.\n\nHakan: Abi ne takmaması ya, gerçekten bu köyde birşeyler varsa ne bok yiyeceğiz?\n\nAsya: Hakan tamam biraz sakin ol.\n\nHakan: Ne sakinliği size uyup geldim ve burada neler olduğunu bile bilmiyoruz.\n\nAsya: Siktir git o zaman Hakan tamam mı? Siktir git!\n\nHakan: Sakın beni aramayın(Hakan kapıyı sertçe çarparak evden çıktı)",{
 
 
 reply_markup: {
@@ -1040,6 +1180,32 @@ reply_markup: {
           [
               
             {text: 'Konuşmaya devam et', callback_data: 'konusmayadevam10'},
+               
+                
+                
+          ],
+
+        
+    ]
+
+}
+})
+
+})
+
+bot.action('konusmayadevam16', ctx=> {
+    ctx.deleteMessage();
+
+
+bot.telegram.sendMessage(ctx.chat.id, "(Hakan dua etmeye başlar)\n\nLina: Allahım kurtar bizi. (Etrafa bakınıyorsun)\n\nLina: Asya? Asya nerede? Emrah Asya yok!\n\n(Asya'yı ararken etrafına bakıyorsun ve Emrah'ı da göremiyorsun)\n\nLina: Lütfen rüya görüyor olayım lütfen!\n\n(Başka bir odadan ses geliyor ve oraya yürüyorsun.",{
+
+
+reply_markup: {
+
+    inline_keyboard: [
+          [
+              
+            {text: 'Devam et', callback_data: 'konusmayadevam17'},
                
                 
                 
@@ -1208,7 +1374,7 @@ ctx.replyWithAudio({
         inline_keyboard: [
             [
                 
-                  {text: "Devam et", callback_data: 'konusmayadevam1F5'},
+                  {text: "Devam et", callback_data: 'konusmayadevam16'},
                  
                   
                   
