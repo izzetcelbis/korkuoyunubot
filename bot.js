@@ -748,7 +748,7 @@ reply_markup: {
 })
 bot.action('ikisideoldu', ctx=> {
     ctx.deleteMessage();
-bot.telegram.sendMessage(ctx.chat.id, "Adam birden etraftan kayboldu, odada Emrah ile Asya'nın ölüsü ve sen kaldın. Onların ölümüne sebep olduğun için yerdeki bıçaklardan birini alarak kendini öldürdün.\n\n Karakterin öldü, bu benim ilk oyunumdu önerileriniz için @izzetcik ulaşabilirsiniz. OYUNU TEKRAR OYNAMAK İÇİN /start",{
+bot.telegram.sendMessage(ctx.chat.id, "Adam birden etraftan kayboldu, odada Emrah ile Asya'nın ölüsü ve sen kaldın. Onların ölümüne sebep olduğun için yerdeki bıçaklardan birini alarak kendini öldürdün.\n\n Karakterin öldü, bu benim ilk oyunumdu önerileriniz için @izzetcik ulaşabilirsiniz. OYUNU TEKRAR OYNAMAK İÇİN /start   OYUNLARIN DEVAMI İÇİN https://t.me/joinchat/cl0Z72BFbPNjM2U0",{
 
 })
 })
@@ -814,7 +814,7 @@ reply_markup: {
 })
 bot.action('kulubekac', ctx=> {
     ctx.deleteMessage();
-bot.telegram.sendMessage(ctx.chat.id, "Kulübeden çıktın ve misafir evine ulaşıp arabanın anahtarını aldın, arabaya binip köyden çıkmaya çalıştın. Telefonun çektiği bir yerde 156'yı arıyarak olanları anlattın ve arkadaşlarının öldüğünü söyledin. Sen olayı anlattıktan sonra telefondan arapça bir ses geldi sen telefonu kapatamadan görünmeyen bir varlık boynunu kırarak seni öldürdü.\n\nBu benim ilk oyunumdu oynadığınız için teşekkür ederim, önerileriniz için bana ulaşabilirsiniz. / @izzetcik / /start",{
+bot.telegram.sendMessage(ctx.chat.id, "Kulübeden çıktın ve misafir evine ulaşıp arabanın anahtarını aldın, arabaya binip köyden çıkmaya çalıştın. Telefonun çektiği bir yerde 156'yı arıyarak olanları anlattın ve arkadaşlarının öldüğünü söyledin. Sen olayı anlattıktan sonra telefondan arapça bir ses geldi sen telefonu kapatamadan görünmeyen bir varlık boynunu kırarak seni öldürdü.\n\nBu benim ilk oyunumdu oynadığınız için teşekkür ederim, önerileriniz için bana ulaşabilirsiniz. / @izzetcik / /start     OYUNLARIN DEVAMI İÇİN https://t.me/joinchat/cl0Z72BFbPNjM2U0",{
 
 })
 })
@@ -825,7 +825,7 @@ bot.action('sesingeldigiyer', ctx=> {
 ctx.replyWithVideo({
     source: "ikikadin.jpg"
 },{
-    caption: "Sesin geldiği yere doğru gittin, arkadaşların arkası dönük bir şekilde konuşuyorlardı, Asya'ya yaklaştın ve sırtına dokunarak iyi misin dedin. Üçüde arkasını döndü fakat arkadaşların değil üçüde cindi, seni öldürdüler. Bu benim ilk oyunumdu, tavsiye ve önerileriniz için bana ulaşabilirsiniz / @izzetcik / /start",
+    caption: "Sesin geldiği yere doğru gittin, arkadaşların arkası dönük bir şekilde konuşuyorlardı, Asya'ya yaklaştın ve sırtına dokunarak iyi misin dedin. Üçüde arkasını döndü fakat arkadaşların değil üçüde cindi, seni öldürdüler. Bu benim ilk oyunumdu, tavsiye ve önerileriniz için bana ulaşabilirsiniz / @izzetcik / /start      OYUNLARIN DEVAMI İÇİN https://t.me/joinchat/cl0Z72BFbPNjM2U0",
    
 }
 )
@@ -1316,7 +1316,7 @@ bot.action('konusmayadevam16', ctx=> {
     ctx.deleteMessage();
 
 
-bot.telegram.sendMessage(ctx.chat.id, "(Hakan dua etmeye başlar)\n\nLina: Allahım kurtar bizi. (Etrafa bakınıyorsun)\n\nLina: Asya? Asya nerede? Emrah Asya yok!\n\n(Asya'yı ararken etrafına bakıyorsun ve Emrah'ı da göremiyorsun)\n\nLina: Lütfen rüya görüyor olayım lütfen!\n\n(Başka bir odadan ses geliyor ve oraya yürüyorsun.",{
+bot.telegram.sendMessage(ctx.chat.id, "(Emrah dua etmeye başlar)\n\nLina: Allahım kurtar bizi. (Etrafa bakınıyorsun)\n\nLina: Asya? Asya nerede? Emrah Asya yok!\n\n(Asya'yı ararken etrafına bakıyorsun ve Emrah'ı da göremiyorsun)\n\nLina: Lütfen rüya görüyor olayım lütfen!\n\n(Başka bir odadan ses geliyor ve oraya yürüyorsun.",{
 
 
 reply_markup: {
